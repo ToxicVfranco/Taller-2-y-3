@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1749000683 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\main.cpp
+	"Biblioteca.h"
+	<iostream>
+	<string>
+
+1749000687 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\biblioteca.h
+	<vector>
+	<string>
+	<fstream>
+	<ctime>
+	"Material.h"
+	"Usuario.h"
+	"Asistente.h"
+
+1748999676 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\material.h
+	<string>
+
+1749000687 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\usuario.h
+	"Persona.h"
+
+1749000687 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\persona.h
+	<vector>
+	<string>
+	"Material.h"
+
+1749000687 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\asistente.h
+	"Persona.h"
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\asistente.cpp
+	"Asistente.h"
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\biblioteca.cpp
+	"Biblioteca.h"
+	"Libro.h"
+	"DVD.h"
+	"Revista.h"
+	<iostream>
+	<fstream>
+	<string>
+
+1749000687 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\libro.h
+	"Material.h"
+
+1749000687 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\dvd.h
+	"Material.h"
+
+1749000687 c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\include\revista.h
+	"Material.h"
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\dvd.cpp
+	"DVD.h"
+	<iostream>
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\libro.cpp
+	"Libro.h"
+	<iostream>
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\material.cpp
+	"Material.h"
+	<iostream>
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\persona.cpp
+	"Persona.h"
+	"Material.h"
+	<iostream>
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\revista.cpp
+	"Revista.h"
+	<iostream>
+
+1749000687 source:c:\users\xxvac\onedrive\documents\programación\c++\taller 2 y 3\src\usuario.cpp
+	"Usuario.h"
+
