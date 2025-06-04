@@ -109,9 +109,26 @@ void Biblioteca::mostrarMateriales() {
     }
 }
 
+void Biblioteca::mostrarMaterialesPorTipo(string tipo) {
+    cout << "\n=== " << tipo << " DISPONIBLES ===" << endl;
+    bool encontrados = false;
+    
+    for (auto material : materiales) {
+        if (material->getTipo() == tipo && material->estaDisponible()) {
+            material->mostrarInfo();
+            cout << "-----------------" << endl;
+            encontrados = true;
+        }
+    }
+    
+    if (!encontrados) {
+        cout << "No hay " << tipo << " disponibles actualmente." << endl;
+    }
+}
+
 void Biblioteca::cargarDatosIniciales() {
     // Cargar libros desde archivo
-    ifstream archivoLibros("libros.txt");
+    ifstream archivoLibros("datos/libros.txt");
     if (archivoLibros.is_open()) {
         string linea;
         while (getline(archivoLibros, linea)) {
@@ -132,7 +149,7 @@ void Biblioteca::cargarDatosIniciales() {
     }
 
     // Cargar DVDs desde archivo
-    ifstream archivoDVDs("DVDs.txt");
+    ifstream archivoDVDs("datos/DVDs.txt");
     if (archivoDVDs.is_open()) {
         string linea;
         while (getline(archivoDVDs, linea)) {
@@ -153,7 +170,7 @@ void Biblioteca::cargarDatosIniciales() {
     }
 
     // Cargar revistas desde archivo
-    ifstream archivoRevistas("Revistas.txt");
+    ifstream archivoRevistas("datos/Revistas.txt");
     if (archivoRevistas.is_open()) {
         string linea;
         while (getline(archivoRevistas, linea)) {

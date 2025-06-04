@@ -34,6 +34,7 @@ public:
     void devolverMaterial(string idMaterial, string idUsuario, string idAsistente);
 
     void mostrarMateriales();
+    void mostrarMaterialesPorTipo(string tipo);
     void cargarDatosIniciales();
 };
 

@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Compilar C++",
+      "command": "g++",
+      "args": [
+        "-I${workspaceFolder}/include",   
+        "${workspaceFolder}/src/main.cpp",
+        "${workspaceFolder}/src/Biblioteca.cpp",
+        "${workspaceFolder}/src/Material.cpp",
+        "${workspaceFolder}/src/Libro.cpp",
+        "${workspaceFolder}/src/DVD.cpp",
+        "${workspaceFolder}/src/Revista.cpp",
+        "${workspaceFolder}/src/Persona.cpp",
+        "${workspaceFolder}/src/Usuario.cpp",
+        "${workspaceFolder}/src/Asistente.cpp",
+        "-o",
+        "${workspaceFolder}/bin/programa",
+        "-Wall",          
+        "-g"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"       
+      },
+      "problemMatcher": ["$gcc"],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Compilador: g++"
+    }
+  ]
+}

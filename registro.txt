@@ -1,0 +1,8 @@
+[Wed Jun  4 04:55:37 2025
+] PRESTAMO - Material: REV033 - Persona: USR001
+[Wed Jun  4 04:57:18 2025
+] PRESTAMO - Material: REV031 - Persona: USR001
+[Wed Jun  4 04:57:42 2025
+] PRESTAMO - Material: REV032 - Persona: USR001
+[Wed Jun  4 04:58:32 2025
+] DEVOLUCION - Material: REV031 - Persona: USR001

@@ -1,4 +1,4 @@
-#include "Biblioteca.h"
+#include "../include/Biblioteca.h"
 #include <iostream>
 #include <string>
 
@@ -14,6 +14,7 @@ void mostrarMenu() {
 }
 
 int main() {
+
     Biblioteca biblioteca;
 
     // Cargar datos iniciales
@@ -32,8 +33,24 @@ int main() {
         cin.ignore(); // Limpiar el buffer
 
         switch (opcion) {
-            case 1: {
-                biblioteca.mostrarMateriales();
+            case 1: {  // Mostrar materiales disponibles
+                int opcionFiltro;
+                cout << "\n=== FILTRAR MATERIALES ===" << endl;
+                cout << "1. Libros" << endl;
+                cout << "2. DVDs" << endl;
+                cout << "3. Revistas" << endl;
+                cout << "4. Todos" << endl;
+                cout << "Seleccione el tipo: ";
+                cin >> opcionFiltro;
+                cin.ignore();
+
+                switch (opcionFiltro) {
+                    case 1: biblioteca.mostrarMaterialesPorTipo("Libro"); break;
+                    case 2: biblioteca.mostrarMaterialesPorTipo("DVD"); break;
+                    case 3: biblioteca.mostrarMaterialesPorTipo("Revista"); break;
+                    case 4: biblioteca.mostrarMateriales(); break;  // Mostrar todos
+                    default: cout << "Opción no válida" << endl;
+                }
                 break;
             }
             case 2: {
